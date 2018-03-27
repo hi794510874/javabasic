@@ -1,6 +1,9 @@
 package com.owen;
 
 
+import com.owen.model.Man;
+import com.owen.model.Person;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -48,43 +51,6 @@ public class GenericTypes {
         }
 
     }
-
-    static class Person {
-        private String name;
-        private Date birthDay;
-        private String birthPlace;
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public Date getBirthDay() {
-            return birthDay;
-        }
-
-        public void setBirthDay(Date birthDay) {
-            this.birthDay = birthDay;
-        }
-
-        public String getBirthPlace() {
-            return birthPlace;
-        }
-
-        public void setBirthPlace(String birthPlace) {
-            this.birthPlace = birthPlace;
-        }
-
-
-    }
-
-    static class Man extends Person {
-
-    }
-
     /*
     * 限制 T 必须是从 person 继承的
     * */
